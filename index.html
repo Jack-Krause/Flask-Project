@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="script.js"></script>
+
+<head>
+    <title>Home Page</title>
+    <style type = "text/css">
+        html {
+            background-color: black;
+            color: lightgrey;
+            font-family: Lora, serif;
+            font-size: 200%;
+        }
+        h1 {
+            font-size: 300%;
+            text-decoration: none;
+            font-family: Ubuntu, sans-serif;
+            color: goldenrod;
+            border:lightgray;
+            border-style: solid;
+        }
+        p {
+            font-family: serif;
+            color:lightgrey;
+            font-weight: bolder;
+        }
+        #shape {
+            font-weight: lighter;
+            color: goldenrod;
+        }
+        form {
+            font-size: 80%
+        }
+        input[type=text] {
+            background-color:lightgrey
+    
+        }
+        input[type=submit] {
+            background-color: goldenrod;
+        }
+        input[type=text]:focus {
+            background-color: white;
+        }
+    </style>
+    <link href="style.css" type=¨text/css¨ rel=¨stylesheet¨>
+</head>
+<body>
+        <h1 id='title'>Fitness Page</h1>
+        <p><span id="welcome">Welcome.</span> It's time to get in <span id='shape'>Shape</span></p>
+        <form method="post">
+            <label for="name">Username </label><br>
+            <input type="text" name="name">
+            <br><label for="password">Password</label><br>
+            <input type="text" name="password">
+            <br><input type="submit" value="Let's Go">
+        </form>
+
+
+
+    </body>
+</html>
