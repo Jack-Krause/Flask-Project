@@ -3,7 +3,7 @@
 <script type="text/javascript" src="script.js"></script>
 
 <head>
-    <title>Days</title>
+    <title>Home Page</title>
     <style type = "text/css">
         html {
             background-color: black;
@@ -12,7 +12,7 @@
             font-size: 200%;
         }
         h1 {
-            font-size: 200%;
+            font-size: 250%;
             text-decoration: none;
             font-family: Ubuntu, sans-serif;
             color: goldenrod;
@@ -24,15 +24,38 @@
             color:lightgrey;
             font-weight: bolder;
         }
-        h2 {
-            text-align: center;
+        #shape {
+            font-weight: lighter;
+            color: goldenrod;
+        }
+        form {
+            font-size: 80%
+        }
+        input[type=text] {
+            background-color:lightgrey
+    
+        }
+        input[type=submit] {
+            background-color: goldenrod;
+        }
+        input[type=text]:focus {
+            background-color: white;
         }
     </style>
     <link href="style.css" type=¨text/css¨ rel=¨stylesheet¨>
 </head>
-    <body>
-            <p><a href={{ url_for('index.html') }}>Home</a></p>
-            <h1>Jack'd Fitness</h1>
-            <h2>Muscle Building:</h2>
+<body>
+        <h1 id='title'>JackD Fitness</h1>
+        <p><span id="welcome">Welcome.</span> It's time to get in <span id='shape'>Shape</span></p>
+        <form method="POST">
+            <label for="name">Username </label><br>
+            <input type="text" name="name">
+            <br><label for="password">Password</label><br>
+            <input type="text" name="password">
+            <br><input type="submit" value="Let's Go">
+        </form>
+
+
+
     </body>
 </html>
